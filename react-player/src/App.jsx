@@ -51,7 +51,7 @@ const App = () => {
             <button type="sumbit" className="submit-button" disabled={error}>
               <AiOutlineArrowRight />
             </button>
-            {error && url && <img src="./error-sign.png" alt="error" />}
+            {error && url && <img src="../error-sign.png" alt="error" />}
           </form>
           {error && url && <p className="error">{error}</p>}
         </>
