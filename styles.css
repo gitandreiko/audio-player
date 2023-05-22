@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1b191c;
+}
+
+main {
+    background-color: #1b191c;
+    color: #f5f6f7;
+    width: 1440px;
+    padding: 12px;
+}
+
+/* ТОПОВЫЙ БЛОК */
+.top {
+    display: flex;
+    padding: 40px;
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+.top-text {
+    display: flex;
+    flex-direction: column;
+    width: 492px;
+    height: 410px;
+}
+
+.top-text h1 {
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.top-text p {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 24px;
+}
+
+.box {
+    margin-top: auto;
+}
+
+.box span {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.box a {
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    color: #1b191c;
+}
+
+/* ПЛЕЕР */
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 844px;
+    height: 148px;
+    margin-top: 140px;
+}
+
+.app-section {
+    border: 2px dashed #1b191c;
+    border-radius: 6px;
+    padding: 40px;
+}
+
+.message p {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* КАК ЭТО РАБОТАЕТ */
+.how-it-works {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 40px 0;
+}
+
+.how-it-works-text {
+    width: 672px;
+    height: 252px;
+}
+
+.how-it-works-text h1 {
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.how-it-works-text p {
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+}
+
+.illu1 img {
+    width: 628px;
+    height: 248px;
+}
+
+/* ХАРАКТЕРИСТИКИ */
+.requirments {
+    padding: 120px 40px;
+}
+
+.requirments p {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.options {
+    margin-top: 40px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.options p {
+    cursor: pointer;
+    color: #cfd3d6;
+    font-size: 24px;
+}
+
+.options p:hover {
+    color: #f5f6f7;
+    border-bottom: 1px solid #f5f6f7;
+}
+
+.some {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: 40px;
+    height: 160px;
+}
+
+.params {
+    display: flex;
+    font-weight: 300;
+    margin-top: 10px;
+    width: 644px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cfd3d61a;
+}
+
+.param {
+    width: 240px;
+}
+
+/* ТОГЛИМ КЛАССЫ */
+.active {
+    color: #f5f6f7 !important;
+    border-bottom: 1px solid #f5f6f7;
+    cursor: pointer;
+}
+
+.hide {
+    display: none !important;
+}

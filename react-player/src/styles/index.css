@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Space+Grotesk:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk';
+    background: #eeeeee;
+    /* margin: 50px 50px; */
+}
+
+.audio-player {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+
+    width: 620px;
+    height: 198px;
+
+    background: #cfd3d6;
+    position: relative;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.time {
+    width: 33px;
+    height: 16px;
+
+    font-family: inherit;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: -0.3px;
+
+    color: #1b191c;
+}
+
+.durvol-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 130px;
+
+    width: 580px;
+    height: 16px;
+}
+
+.playpause-btn {
+    position: absolute;
+    top: 15px;
+    left: 7px;
+    background: transparent;
+    border: none;
+}
+
+.playpause-btn svg {
+    font-size: 50px;
+    fill: white;
+}
+
+.form-container {
+    display: flex;
+
+    width: 680px;
+    height: 96px;
+
+    position: relative;
+}
+
+.form-container img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 102px;
+    top: 33px;
+}
+
+input[type='text'] {
+    width: 100%;
+
+    padding: 32px;
+    padding-right: 45px;
+
+    border: none;
+    background: #ffffff;
+    outline: none;
+
+    font-family: inherit;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.submit-button {
+    width: 96px;
+    height: 96px;
+    background: #f8d231;
+
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button svg {
+    font-size: 50px;
+    font-weight: 600;
+    fill: black;
+}
+
+.heading {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+
+    margin-bottom: 20px;
+
+    color: #1b191c;
+}
+
+.back-btn {
+    font-family: inherit;
+    font-size: 24px;
+    line-height: 32px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: -0.4px;
+    color: #1b191c;
+
+    margin-bottom: 20px;
+}
+
+.error {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+
+    color: #c6a827;
+}
+
+@media screen and (max-width: 1459px) {
+    body {
+        font-family: 'Space Grotesk';
+        background: #eeeeee;
+        width: 370px;
+    }
+
+    /* ИНПУТ */
+    .form-container {
+        display: flex;
+        width: 345px;
+        height: 64px;
+        position: relative;
+    }
+
+    .form-container img {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 75px;
+        top: 20px;
+    }
+
+    input[type='text'] {
+        width: 100%;
+        padding: 10px;
+        padding-right: 15px;
+
+        border: none;
+        background: #ffffff;
+        outline: none;
+
+        font-family: inherit;
+
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .submit-button {
+        width: 64px;
+        height: 64px;
+    }
+
+    .submit-button svg {
+        font-size: 50px;
+        font-weight: 600;
+        fill: black;
+    }
+
+    .heading {
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .error {
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* ПЛЕЕР */
+    .back-btn {
+        font-family: inherit;
+        font-size: 24px;
+        line-height: 32px;
+        border: none;
+        cursor: pointer;
+        letter-spacing: -0.4px;
+        color: #1b191c;
+
+        margin-bottom: 10px;
+    }
+
+    .audio-player {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 20px;
+
+        width: 345px;
+        height: 158px;
+
+        background: #cfd3d6;
+        position: relative;
+    }
+
+    .progress {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .time {
+        width: 33px;
+        height: 16px;
+
+        font-family: inherit;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+
+        letter-spacing: -0.3px;
+
+        color: #1b191c;
+    }
+
+    .durvol-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        gap: 0;
+        width: 300px;
+        height: 16px;
+    }
+
+    .volume {
+        width: 305px;
+    }
+
+    .playpause-btn {
+        position: absolute;
+        top: 15px;
+        left: 7px;
+        background: transparent;
+        border: none;
+    }
+
+    .playpause-btn svg {
+        font-size: 50px;
+        fill: white;
+    }
+}
